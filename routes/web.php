@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-
+Route::get('/.well-known/openid-configuration', '\App\Http\Controllers\Authlete\ConfigurationController');
 // Routes added by AuthleteAuthorizationServerCommand.
 Route::get('/.well-known/openid-configuration', '\App\Http\Controllers\Authlete\ConfigurationController');
 Route::get('/authorization', '\App\Http\Controllers\Authlete\AuthorizationController');
